@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    /* con el * uso el boton universal, lo que me hace el box sizing en todo el codigo, es lo ideal para hacerlo */
+}
+
+h1{
+    color: red;
+    width: 500px;
+}
+span{
+    display: inline-block;
+    width: 20px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+    padding: 10px;
+}
+
+input{
+    width: 400px;
+
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    /* padding-left: 20px; */
+    /* padding: 50px 10px; vertical horizontal */
+    /* padding: 50px 10px 80px; top horizontal bottom */
+    /* padding: 10px 20px 30px 40px; top right bottom left*/
+    /* 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px; */
+    /* padding-left: 100px; */
+    border: 5px solid black;
+    /* border-right: 1px solid black;
+    border-top: 4px dashed yellow; */
+    /* margin-bottom: 10px; */
+    margin: 50px 20px;
+    text-align: center;
+}
+
+
+
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    /* en border pongo primero el tamaño, luego el tipo de linea y el color. puedo modificzr solo un borde poniendo border-left o border-top */
+    box-sizing: border-box;
+    /* propiedad para que la que el tamaño de la caja no cambie cuando pongo padding o bordes, aunque si le agrego mucho contenido se va a ir saliendo de la caja */
+}
+
+span{
+    display: inline-block;
+    /*a los elementos en linea no se les puede hacer estilos correctamente, por lo que se les cambia el display y ya quedan bien los estilos */
+}
+
+.caja-especial{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    box-shadow: 0px 0px 3px 10px black,
+
+    300px 0px 10px black;
+    /* primero pongo grosor horizontal (valor + va ala derecha, si pongo - va a la izquierda), luego vertical (- hacia arriba y + abajo), despues el tamaño del desplazamiento, despues podemos modificar el valor base de la sombra (no se usa mucho) y ultimo el color. La opacidad la controlo apoyandome sobe el color, al costado del selector de color se controla la opacidad */
+    /* neumorphism.io boxshadow son pag que me ayuda con la sombra de un elemento */
+    /* si luego del ptimrt shadow pongo una , en lugar de ; puedo agregar otro shadow */
+
+    box-shadow: inset 0 0 10px black;
+    /* cuando pongo inset me hace la sobra hacia dentro */
+}

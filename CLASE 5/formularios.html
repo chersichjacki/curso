@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>Formulario de registro</h2>
+        <div>
+            <label for="fullname">Ingrese su nombre completo</label>
+            <!--label es el nombre del input y se matchea con el input poniendo el id de input en for-->
+            <input id="fullname" type="text" name="fullname" required minlength="2" maxlength="20" placeholder="Juan Perez">
+            <!--siempre en input poner name como id para que luego me lea los datos con JS-->
+
+            <!-- 
+            ATRIBUTOS EN INPUT: 
+            required: debe completar si o si
+            placeholder: nombre de ej que se ve gris
+            minlength y maxlength: min y max de caracteres -->
+
+            <div>
+            <label for="email">Ingrese su mail</label>
+            <input id="email" type="email" name="email">
+        </div>
+        <div>
+            <label for="contraseña">Ingrese su nombre completo</label>
+            <input id="contraseña" type="password" name="contraseña">
+        </div>
+        <div>
+            <label for="archivos">adjunte recibo de sueldo</label>
+            <input id="archivos" type="file" name="file">
+        </div>
+        <div>
+            <label for="fecha-nac">Ingrese su fecha de nacimiento</label>
+            <input id="fecha-nac" type="date" name="fecha-nac">
+        </div>
+        <div>
+            <label>Seleccione un lenguaje:</label>
+            <div>
+                <label for="html">HTML</label>
+                <input type="radio" name="lenguaje" id="html">
+            </div>
+            <div>
+                <label for="css">CSS</label>
+                <input type="radio" name="lenguaje" id="css">
+            </div>
+            <div>
+                <label for="js">JS</label>
+                <input type="radio" name="lenguaje" id="js">
+            </div>
+            <!--con type="radio" creo inputs para seleccionar, al tener todos el mismo name, solo se puede seleccionar una opcion entre varias-->
+        </div>
+        <div>
+            <label for="">Seleccione las tecnologias que conoce:</label>
+            <div>
+                <label for="sql">SQL</label>
+                <input type="checkbox" id="sql" name="tecnologia">
+            </div>
+            <div>
+                <label for="htmlconocido">HTML</label>
+                <input type="checkbox" id="htmlconocido" name="tecnologia">
+                <!--pongo otro id porque html ya lo use arriba-->
+            </div>
+            <div>
+                <label for="git">git</label>
+                <input type="checkbox" id="git" name="tecnologia">
+            </div>
+            <div>
+                <label for="pyton">pyton</label>
+                <input type="checkbox" id="pyton" name="tecnologia">
+            </div>
+            <div>
+                <label for="java">java</label>
+                <input type="checkbox" id="java" name="tecnologia">
+                <!--type="checkbox" opcion para seleccionar mas de una opcion-->
+                <!--tienen el mismo name pero no lo enlazo, eso me va a servir para JS-->
+            </div>
+        </div>
+        <div>
+            <label for="provincia">Seleccione su provincia</label>
+            <select id="provincia">
+                <option value="mdz">Mendoza</option>
+                <option value="chaco">Chaco</option>
+                <option value="cdb">Cordoba</option>
+                <option value="jujuy">Jujuy</option>
+                <option value="salta">Salta</option>
+                <!--poner disabled desactiva esa opcion, por ej cuando algo está agotado-->
+                <option selected disabled>No seleccionado</option>
+                <!--selected me pone primero esta opcion. si uso no seleccoinado, tambien le puedo poner disabled para que cuando pone una opcion, no pueda usar el no seleccionado-->
+            </select>
+            <!--el select sirve para hacer opciones desplegables, se enlaza con label pero en lugar de input, pongo directo select-->
+        </div>
+        <div>
+            <label for="msj">Ingrese un mensaje</label>
+            <textarea name="msj" id="msj" cols="20" rows="5"></textarea>
+            <!--me arma un espacio para escribir. Cols es la cant de letras que quiero que escriba en columnas, a lo ancho y rows las letras a lo alto, o sea los renglones-->
+        </div>
+
+        <div>
+            <input type="submit" value="registrar">
+            <!--submit no lleva label y figura un boton para enviar, se autotraduce. Para poner lo que yo quiera en el boton, uso el atributo value -->
+        </div>
+    </form>
+</body>
+</html>

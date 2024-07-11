@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        /* SELECTORES  (en orden de jerarquia, del menor al mayor, del mas gral al mas especifico)*/
+
+        /* el * es el selector universal y con este le cambio el estilo a todos los elementos de mi HTML */ 
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*selector de elementos (pongo directo el elemento) */
+        h1{ color: #3f7017;
+        }
+
+        /* selector de clases (pongo . y el nombre de la clase) */
+        .titulo-imp{
+            color: aquamarine;
+        }    
+
+        /* SELECTORES QUE NO SE USAN TANTO */
+
+        /* selector de id (no se usa tanto porq es limitado, solo un id uso siempre y no se puede reutilizar) */
+        #super-especial{
+            color: blueviolet;
+        }
+
+        </style>
+</head>
+<body>
+    <h1>Hola</h1>
+    <h1  class="titulo-imp" id="super-especial">Hola</h1>
+    <h1>Hola</h1>
+    <!--BEM-CLASS-->
+    <div class="prodcut-card">
+        <div class="product-card__header">
+
+        </div>
+        <h3>Tv samsung</h3>
+        <span>oferta</span>
+        <div class=product-card__img>
+            <img src="" alt="">
+        </div>
+    </div>
+</body>
+</html>

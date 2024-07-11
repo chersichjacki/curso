@@ -1,0 +1,28 @@
+.hero{
+    color: red;
+    font-size: 36px;
+}
+/* la herencia no siempre funciona, por ej en el h1 del hero, esta prestablecido que sea mayor y resalte mas que el p, aunque le cmabie el tamaño, va a crecder mas que el p para resaltar */ 
+.hero p{
+    color: blueviolet;
+}
+/*esto es especificidad, estoy llamando al parrafo del hero. Todos los estilos que llamo, contienen distintos puntos de especificidad: mayor punto, mayor importancia para dar estilos.
+< elementos 
+> html sistemico 
+>> class o id  */
+
+.titulo{
+    color:rgb(30, 138, 87);
+    font-size: 48px;
+    text-decoration: 1px solid underline;
+    /* subrayado de 1px, solido y bajo la linea de texto */
+}
+a{
+    color: blue;
+    text-decoration: none;
+    background-color: black;
+    border-top-right-radius: 9px;
+    /*si uso top right radius, solo redondea la esquina sup der., puedo hacer de una esquina o solo poner border-radius y redondea las 4 */
+    letter-spacing: 1px; /*espaciado entre letras */
+    word-spacing: 2px; /*espaciado entre palabras */
+}

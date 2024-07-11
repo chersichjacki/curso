@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea-4</title>
+</head>
+<body>
+    <form>
+        <h2>FIRST-TIME VISITOR?</h2>
+        <p>Please register below to gain full access to whitepapers, eBooks, podcasts, demos and more. 
+        <i>Fields marked whit * are required</i>
+        </p>
+        <div>
+            <label for="first-name">*First name:</label>
+            <input id="first-name" type="text" name="first-name" required placeholder="Narran">
+        </div>
+        <div>
+            <label for="last-name">*Last name:</label>
+            <input id="last-name" type="text" name="last-name" required placeholder="Porter">
+        </div>
+        <div>
+            <label for="title">*Title:</label>
+            <input id="title" type="text" name="title" required placeholder="CMO">
+        </div>
+        <div>
+            <label for="company">*Company:</label>
+            <input id="company" type="text" name="company" required placeholder="UbiOmniCorp">
+        </div>
+        <div>
+            <label for="phone">*Phone:</label>
+            <input id="phone" type="tel" name="phone" required placeholder="212-304-3847">
+            <p>Please enter in the following format eg. (416) 864-0440 or +1 416-864-0440</p>
+        </div>
+        <div>
+            <label for="email">*Email:</label>
+            <input id="email" type="email" name="email" required placeholder="narran.porter@ubiomnicorp.com">
+        </div>
+        <div>
+            <label for="country">*Country/Region:</label>
+            <select name="country" id="country" required>
+                <option selected value="usd">United States</option>
+                <option value="arg">Argentina</option>
+                <option value="uy">Uruguay</option>
+                <option value="pay">Paraguay</option>
+                <option value="fra">Francia</option>
+            </select>
+        </div>
+        <div>
+            <label for="state">*Company HQ 
+                State/Province:</label>
+            <select name="state" id="state" required>
+                <option selected value="ny">New York</option>
+                <option value="nj">New Jersey</option>
+                <option value="ill">Illinois</option>
+                <option value="arz">Arizona</option>
+                <option value="tx">Texas</option>
+            </select>
+        </div>
+        <div>
+            <label for="industry">*Your industry:</label>
+            <select name="industry" id="industry" required>
+                <option selected value="tech">Technology</option>
+                <option value="inv">Investigation</option>
+                <option value="fin">Finance</option>
+                <option value="mkt">Marketing</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>
